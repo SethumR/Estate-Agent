@@ -1,0 +1,165 @@
+{
+	"properties": [
+        {
+            "id":"prop1",
+            "name":"Luxurious House",
+			"type":"House",
+            "bedrooms":3,
+			"price":750000,
+			"tenure":"Freehold",
+			"description":"Attractive three bedroom semi-detached family home situated within 0.5 miles of Petts Wood station with fast trains to London and within easy walking distance of local shops, schools, bus routes and National Trust woodland. The property comprises; two receptions, fitted 18'9 x 10'1 kitchen/breakfast room and conservatory. The property also benefits from having a utility room and cloakroom. To the first floor there are three bedrooms and a family bathroom with separate WC. Additional features include double glazing, gas central heating and a well presented interior...",
+			"location":"Petts Wood Road, Petts Wood, Orpington BR5",
+			"picture":"p1.png",
+            "thumbnails": [
+                "thumb1.jpg",
+                "thumb2.jpg",
+                "thumb3.jpg",
+                "thumb4.jpg"
+            ],
+			"url":"properties/prop1.html",
+            "added": {
+                "month":"October",
+                "day":12,
+                "year":2022
+            }
+        },
+		{
+            "id":"prop2",
+            "name":"Luxurious Flat",
+			"type":"Flat",
+            "bedrooms":2,
+			"price":399995,
+			"tenure":"Freehold",
+			"description":"Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat. <br>The modern fitted kitchen is open plan to the living room which boasts solid wooden floors and includes integrated appliances including a dishwasher & a washing machine. This large open plan benefits from bi folding doors onto a secluded private courtyard garden. Both bedrooms are double sized, and the family bathroom boasts a matching three piece suite a shower attachment over the bath. There is also a separate wet room. There are walnut doors throughout and wiring for Sky TV/aerial points in the living room/kitchen and both bedrooms.<br>This apartment being only five years old, is still under a 10 year building guarantee...",
+			"location":"Crofton Road Orpington BR6",
+			"picture":"p2.png",
+            "thumbnails": [
+                "thumb1.jpg",
+                "thumb2.jpg",
+                "thumb3.jpg",
+                "thumb4.jpg"
+            ],
+			"url":"properties/prop2.html",
+            "added": {
+                "month":"September",
+                "day":14,
+                "year":2022
+            }
+        },
+        {
+            "id": "prop3",
+            "name": "Modern Family Home",
+            "type": "House",
+            "bedrooms": 4,
+            "price": 850000,
+            "tenure": "Freehold",
+            "description": "Spacious four bedroom semi-detached house located just 0.3 miles from the local station, with quick access to London. The property includes a large living room, open-plan kitchen with dining area, and a lovely garden. Additional features include modern fittings, double glazing, and central heating. Close to amenities, schools, and parks.",
+            "location": "Greenwood Road, Petts Wood, Orpington BR5",
+            "picture": "p3.png",
+            "thumbnails": [
+                "thumb1.jpg",
+                "thumb2.jpg",
+                "thumb3.jpg",
+                "thumb5.jpg"
+            ],
+            "url": "properties/prop3_updated.html",
+            "added": {
+                "month": "November",
+                "day": 20,
+                "year": 2023
+            }
+        },
+        {
+            "id": "prop4",
+            "name": "Luxury Cottage",
+            "type": "House",
+            "bedrooms": 2,
+            "price": 650000,
+            "tenure": "Leasehold",
+            "description": "Charming two-bedroom cottage nestled in a quiet rural area, just a short drive from local shops and transport links. The property includes a cozy living room with a fireplace, a well-equipped kitchen, and a sunny garden. Ideal for a small family or a couple.",
+            "location": "Rosemary Lane, Orpington BR5",
+            "picture": "p4.png",
+            "thumbnails": [
+                "thumb2.jpg",
+                "thumb3.jpg",
+                "thumb4.jpg",
+                "thumb6.jpg"
+            ],
+            "url": "properties/prop4_updated.html",
+            "added": {
+                "month": "December",
+                "day": 5,
+                "year": 2023
+            }
+        },
+        {
+            "id": "prop5",
+            "name": "Contemporary Townhouse",
+            "type": "House",
+            "bedrooms": 5,
+            "price": 1200000,
+            "tenure": "Freehold",
+            "description": "Stunning five-bedroom townhouse located within a sought-after residential area, just a few minutes from central London. Features a spacious living area, designer kitchen, private garden, and top-quality finishes. Perfect for those looking for modern living with easy access to the city.",
+            "location": "City View Road, London NW3",
+            "picture": "p5.png",
+            "thumbnails": [
+                "thumb1.jpg",
+                "thumb2.jpg",
+                "thumb3.jpg",
+                "thumb7.jpg"
+            ],
+            "url": "properties/prop5_updated.html",
+            "added": {
+                "month": "January",
+                "day": 10,
+                "year": 2024
+            }
+        },
+        {
+            "id": "prop6",
+            "name": "Stylish Detached House",
+            "type": "House",
+            "bedrooms": 6,
+            "price": 1500000,
+            "tenure": "Freehold",
+            "description": "Exceptional six-bedroom detached house, located in a prestigious neighborhood, offering ample living space and luxury amenities. Features include a home cinema, large kitchen with island, spacious bedrooms, and a beautifully landscaped garden. Perfect for a large family or for entertaining guests.",
+            "location": "Park Avenue, Kensington, London SW7",
+            "picture": "p6.png",
+            "thumbnails": [
+                "thumb3.jpg",
+                "thumb4.jpg",
+                "thumb5.jpg",
+                "thumb8.jpg"
+            ],
+            "url": "properties/prop6_updated.html",
+            "added": {
+                "month": "February",
+                "day": 15,
+                "year": 2024
+            }
+        },
+        {
+            "id": "prop7",
+            "name": "Spacious Modern Bungalow",
+            "type": "House",
+            "bedrooms": 3,
+            "price": 700000,
+            "tenure": "Freehold",
+            "description": "Well-presented three-bedroom bungalow, located in a quiet suburban area with excellent transport links. The property boasts an open-plan living space, modern kitchen, and well-maintained garden. Ideal for downsizers or those looking for easy single-story living.",
+            "location": "Meadow Lane, Bromley BR1",
+            "picture": "p7.png",
+            "thumbnails": [
+                "thumb1.jpg",
+                "thumb2.jpg",
+                "thumb3.jpg",
+                "thumb9.jpg"
+            ],
+            "url": "properties/prop7_updated.html",
+            "added": {
+                "month": "March",
+                "day": 5,
+                "year": 2024
+            }
+        }
+        
+]}
