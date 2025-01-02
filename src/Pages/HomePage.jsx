@@ -43,8 +43,6 @@ const propertyTypes = [
   },
 ];
 
-
-
 function HomePage() {
   const [favorites, setFavorites] = useState([]);
   const [searchParams, setSearchParams] = useState({
@@ -104,6 +102,17 @@ function HomePage() {
     }
   };
 
+  const scrollToFeaturedProperties = () => {
+    const featuredPropertiesSection = document.getElementById('featured-properties');
+    if (featuredPropertiesSection) {
+      window.scrollTo({
+        top: featuredPropertiesSection.offsetTop - 100,  
+        behavior: 'smooth'
+      });
+    }
+  };
+  
+
   return (
     <div className="min-h-screen flex flex-col">
       <div className="container mx-auto px-4 py-12 md:py-24 mb-12 mt-16 -sm:mt-12">
@@ -115,24 +124,26 @@ function HomePage() {
                House With Us.
             </h1>
             <p className="text-gray-700 text-lg md:text-xl max-w-lg">
-            Find your ideal home with us. From cozy houses to luxurious villas, we offer a range of rental options to suit your needs and budget.
+              Find your ideal home with us. From cozy houses to luxurious villas, we offer a range of rental options to suit your needs and budget.
             </p>
             <div className="pt-4 ">
-              <button className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg--blue-700 transition-colors mb-8">
+              <button
+                onClick={scrollToFeaturedProperties}
+                className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg--blue-700 transition-colors mb-8"
+              >
                 Get Started
               </button>
             </div>
           </div>
           <div className="w-[340px] max-w-[702px] h-[300px] sm:w-[702px] sm:h-[570px]">
-          <img
-            src="Backgroung.png"
-            alt="Modern dream house"
-            className="w-full h-full object-cover rounded-tl-[100px] rounded-lg"
-          />
+            <img
+              src="Backgroung.png"
+              alt="Modern dream house"
+              className="w-full h-full object-cover rounded-tl-[100px] rounded-lg"
+            />
+          </div>
         </div>
-
-        </div>
-    </div>
+      </div>
 
       {/* Featured Property Types Section */}
       <section className="bg-gray-50 py-12 sm:mb-24 rounded-xl">
@@ -169,7 +180,7 @@ function HomePage() {
         </aside>
 
         <main className="lg:w-3/4 p-6">
-          <section>
+          <section id="featured-properties">
             <h2 className="text-3xl font-extrabold text-center mb-6 sm:text-4xl">
               Featured Properties
             </h2>
@@ -205,15 +216,15 @@ function HomePage() {
                         </Link>
 
                         <button
-                          className={`text-2xl ${
+                          className={`text-2xl p-3 rounded-full ${
                             favorites.find((fav) => fav.id === property.id)
-                              ? 'text-red-500'
-                              : 'text-gray-400'
-                          }`}
-                          onClick={() => toggleFavorite(property)}
-                        >
+                              ? 'text-red-500 border-2 border-red-500'
+                              : 'text-gray-400 border-2 border-gray-400'
+                          } w-10 h-10 flex items-center justify-center`}
+                          onClick={() => toggleFavorite(property)}>
                           ♥
                         </button>
+
                       </div>
                     </div>
                   </div>
