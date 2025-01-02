@@ -10,13 +10,14 @@
 			"description":"Attractive three bedroom semi-detached family home situated within 0.5 miles of Petts Wood station with fast trains to London and within easy walking distance of local shops, schools, bus routes and National Trust woodland. The property comprises; two receptions, fitted 18'9 x 10'1 kitchen/breakfast room and conservatory. The property also benefits from having a utility room and cloakroom. To the first floor there are three bedrooms and a family bathroom with separate WC. Additional features include double glazing, gas central heating and a well presented interior...",
 			"location":"Petts Wood Road, Petts Wood, Orpington BR5",
 			"picture":"p1.png",
-            "prop":"Background.png",
+            "prop":"https://www.hubblehomes.com/new-homes/idaho/boise-metro/caldwell/media_1d5369088105542bc21adb7a1ae17ce156452efe2.jpeg?width=1920&format=jpeg&optimize=medium",
             "thumbnails": [
-                "thumb1.jpg",
-                "thumb2.jpg",
-                "thumb3.jpg",
-                "thumb4.jpg"
+                "https://www.decorilla.com/online-decorating/wp-content/uploads/2023/06/Bedroom-interior-design-ideas-for-relaxation.jpg",
+                "https://plus.unsplash.com/premium_photo-1680382578857-c331ead9ed51?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8a2l0Y2hlbiUyMGRlc2lnbnxlbnwwfHwwfHx8MA%3D%3D",
+                "https://plus.unsplash.com/premium_photo-1706140675031-1e0548986ad1?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bGl2aW5ncm9vbXxlbnwwfHwwfHx8MA%3D%3D",
+                "https://www.mypunepulse.com/wp-content/uploads/2024/11/WhatsApp-Image-2024-11-12-at-2.55.33-PM.jpeg"
             ],
+            "plan":"https://images.squarespace-cdn.com/content/v1/5cbf6245f4e5311aabbdca11/1579397647278-NEPG7JID6WVBBHWTJ5UV/Floorplan.png",
 			"url":"properties/prop1.html",
             "added": {
                 "month":"October",
@@ -34,12 +35,14 @@
 			"description":"Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat. <br>The modern fitted kitchen is open plan to the living room which boasts solid wooden floors and includes integrated appliances including a dishwasher & a washing machine. This large open plan benefits from bi folding doors onto a secluded private courtyard garden. Both bedrooms are double sized, and the family bathroom boasts a matching three piece suite a shower attachment over the bath. There is also a separate wet room. There are walnut doors throughout and wiring for Sky TV/aerial points in the living room/kitchen and both bedrooms.This apartment being only five years old, is still under a 10 year building guarantee...",
 			"location":"Crofton Road Orpington BR6",
 			"picture":"p2.png",
+            "prop":"https://cdn.shopify.com/s/files/1/2829/0660/files/Haystack-Left-Front-Evening_1600x.jpg?v=1725912843",
             "thumbnails": [
-                "thumb1.jpg",
-                "thumb2.jpg",
-                "thumb3.jpg",
-                "thumb4.jpg"
+                "https://hips.hearstapps.com/hmg-prod/images/ghk070123homeminifeature-005-6740fe6008d7d.png?crop=1xw:0.8423460898502496xh;center,top&resize=1200:*",
+                "https://st.hzcdn.com/simgs/pictures/kitchens/kitchens-michael-alan-kaskel-img~0d511d8e0e77ab3a_14-6521-1-7aacee2.jpg",
+                "https://st.hzcdn.com/simgs/3eb1952406f72e55_14-5330/_.jpg",
+                "https://cdn.prod.website-files.com/652ebb80c558ca4931508113/655e7630bec963a8693b5593_80-1.png"
             ],
+            "plan":"https://png.pngtree.com/template/20220330/ourmid/pngtree-cad-floor-plan-of-three-rooms-and-one-hall-image_881558.jpg",
 			"url":"properties/prop2.html",
             "added": {
                 "month":"September",
@@ -49,20 +52,22 @@
         },
         {
             "id": "prop3",
-            "name": "Modern Family Home",
-            "type": "House",
+            "name": "Modern Family Villa",
+            "type": "Villa",
             "bedrooms": 4,
             "price": 850000,
             "tenure": "Freehold",
             "description": "Spacious four bedroom semi-detached house located just 0.3 miles from the local station, with quick access to London. The property includes a large living room, open-plan kitchen with dining area, and a lovely garden. Additional features include modern fittings, double glazing, and central heating. Close to amenities, schools, and parks.",
             "location": "Greenwood Road, Petts Wood, Orpington BR5",
             "picture": "p3.png",
+            "prop":"https://archivaldesigns.com/cdn/shop/files/MainDSC_9880-Edit_1600x.jpg?v=1724438459",
             "thumbnails": [
-                "thumb1.jpg",
-                "thumb2.jpg",
-                "thumb3.jpg",
-                "thumb5.jpg"
+                "https://media.koelnmesse.io/imm2021/redaktionell/imm/img/online_magazin/schlaf/imm-artikel-schlaf-headerbild_m24_full_m36_1025.png",
+                "https://st.hzcdn.com/simgs/96d194f304b976e4_14-6201/_.jpg",
+                "https://fancyhouse-design.com/wp-content/uploads/2024/03/Warm-wood-tones-add-a-cozy-touch-to-the-modern-living-room-enhancing-its-inviting-atmosphere.jpg",
+                "https://i.pinimg.com/736x/fd/ee/01/fdee018cc4b4ebacd1b0496fd329dc22.jpg"
             ],
+            "plan":"https://images.squarespace-cdn.com/content/v1/5bdde6530dbda3230ba6bd5d/1582757759192-V5GJC3HRY3JNN65M2R0W/FloorPlan.png",
             "url": "properties/prop3_updated.html",
             "added": {
                 "month": "November",
@@ -72,20 +77,22 @@
         },
         {
             "id": "prop4",
-            "name": "Luxury Cottage",
-            "type": "House",
+            "name": "Luxury Villa",
+            "type": "Villa",
             "bedrooms": 2,
             "price": 650000,
             "tenure": "Leasehold",
             "description": "Charming two-bedroom cottage nestled in a quiet rural area, just a short drive from local shops and transport links. The property includes a cozy living room with a fireplace, a well-equipped kitchen, and a sunny garden. Ideal for a small family or a couple.",
             "location": "Rosemary Lane, Orpington BR5",
             "picture": "p4.png",
+            "prop":"https://www.thehousedesigners.com/images/plans/01/MHD/bulk/1062/black-creek-2-direct-front-final_06-1_m.webp",
             "thumbnails": [
-                "thumb2.jpg",
-                "thumb3.jpg",
-                "thumb4.jpg",
-                "thumb6.jpg"
+                "https://usa-forum.d5cdn.com/optimized/2X/d/deb73ae24f5db9080d79e3edc8e1131f6186626b_2_526x500.png",
+                "https://st.hzcdn.com/simgs/a9614fd901d8a3f1_4-6420/home-design.jpg",
+                "https://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2023/7/19/3/DOTY2023_Dramatic-Before-And-Afters_Hidden-Hills-11.jpg.rend.hgtvcom.1280.1280.suffix/1689786863909.jpeg",
+                "https://i.pinimg.com/736x/1b/13/e7/1b13e7203294b04f55c93a6ea30df140.jpg"
             ],
+            "plan":"https://www.mymodernhome.com/media/images/MMH_-_4.22_SECOND_FLOOR_PLAN_OPT.width-1200.format-webp.webp",
             "url": "properties/prop4_updated.html",
             "added": {
                 "month": "December",
@@ -95,20 +102,22 @@
         },
         {
             "id": "prop5",
-            "name": "Contemporary Townhouse",
-            "type": "House",
+            "name": "Contemporary TownFlat",
+            "type": "Flat",
             "bedrooms": 5,
             "price": 1200000,
             "tenure": "Freehold",
             "description": "Stunning five-bedroom townhouse located within a sought-after residential area, just a few minutes from central London. Features a spacious living area, designer kitchen, private garden, and top-quality finishes. Perfect for those looking for modern living with easy access to the city.",
             "location": "City View Road, London NW3",
             "picture": "p5.png",
+            "prop":"https://static.vecteezy.com/system/resources/thumbnails/026/585/800/small_2x/beautiful-modern-house-exterior-with-carport-modern-residential-district-and-minimalist-building-concept-by-ai-generated-free-photo.jpg",
             "thumbnails": [
-                "thumb1.jpg",
-                "thumb2.jpg",
-                "thumb3.jpg",
-                "thumb7.jpg"
+                "https://thehome.ae/wp-content/uploads/2024/11/FLEXY-KIDS-BR-3DR-120X200-COL-WHITEOAK-1-900x900.jpg",
+                "https://hips.hearstapps.com/hmg-prod/images/farmhouse-kitchen-green-paint-color-659eebb855988.jpg?crop=0.898xw:0.792xh;0.0379xw,0.0959xh&resize=980:*",
+                "https://www.potterybarn.com.au/site/PB/Landing%20Pages/The%20Collected%20Home/dream-aptos-living-room-thumb.jpg",
+                "https://i.pinimg.com/736x/2a/ab/25/2aab25fd486a60ab14c6c7dc0323ba51.jpg"
             ],
+            "plan":"https://i.pinimg.com/736x/13/48/1a/13481a72022e25b932fe37c0cf0b9b45.jpg",
             "url": "properties/prop5_updated.html",
             "added": {
                 "month": "January",
@@ -126,12 +135,14 @@
             "description": "Exceptional six-bedroom detached house, located in a prestigious neighborhood, offering ample living space and luxury amenities. Features include a home cinema, large kitchen with island, spacious bedrooms, and a beautifully landscaped garden. Perfect for a large family or for entertaining guests.",
             "location": "Park Avenue, Kensington, London SW7",
             "picture": "p6.png",
+            "prop":"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEfHsuanHyCdTMgMCjAiLY8PR2DBxUS8PSqMRleHWdiMXzCviOahlHeUtgne382qB0Xu9RBdsGxKtl9M3TlwyHI-I9yFPL3BXQwc5s2CwdtnYDURLZIWcPgKCkqo2Zh95Bn-VS6KQfCWbb/s1600/beautiful-villa-elevation.jpg",
             "thumbnails": [
-                "thumb3.jpg",
-                "thumb4.jpg",
-                "thumb5.jpg",
-                "thumb8.jpg"
+                "https://assets.wfcdn.com/im/48751337/compr-r85/2883/288326163/scarlett-3-piece-bedroom-set.jpg",
+                "https://optimise2.assets-servd.host/thick-groundhog/production/assets/blog/Modern-Kitchen-Trend.jpg?w=1000&h=600&auto=compress%2Cformat&fit=crop&dm=1655129886&s=1217c3cb45e69b1674afcafd2f6e9478",
+                "https://i0.wp.com/hanashappyhome.com/wp-content/uploads/2023/12/image-1.png?ssl=1",
+                "https://i.pinimg.com/originals/d6/10/3a/d6103a22a5bedfd7e3303937d543a719.jpg"
             ],
+            "plan":"https://i.pinimg.com/originals/cc/a7/2e/cca72e78bb27e620615d3fe7c2bf1ed5.png",
             "url": "properties/prop6_updated.html",
             "added": {
                 "month": "February",
@@ -141,20 +152,22 @@
         },
         {
             "id": "prop7",
-            "name": "Spacious Modern Bungalow",
-            "type": "House",
+            "name": "Spacious Modern Villa",
+            "type": "Villa",
             "bedrooms": 3,
             "price": 700000,
             "tenure": "Freehold",
             "description": "Well-presented three-bedroom bungalow, located in a quiet suburban area with excellent transport links. The property boasts an open-plan living space, modern kitchen, and well-maintained garden. Ideal for downsizers or those looking for easy single-story living.",
             "location": "Meadow Lane, Bromley BR1",
             "picture": "p7.png",
+            "prop":"https://images.trvl-media.com/lodging/4000000/3430000/3422900/3422810/758e5a05.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill",
             "thumbnails": [
-                "thumb1.jpg",
-                "thumb2.jpg",
-                "thumb3.jpg",
-                "thumb9.jpg"
+                "https://media.designcafe.com/wp-content/uploads/2024/01/24175330/essence-of-modern-luxury-bedroom-design.jpg",
+                "https://www.premierkitchens.net.au/wp-content/uploads/kitchen-design-sydney-mosman-modern-white-kitchen-01-846x563.jpg",
+                "https://simplyhomedecorating.com/wp-content/uploads/2022/11/Simply-Home-Decorating-Cozy-Living-Room-Vancouver-Neutral-Sofa-Light-Blue-Accent-Chairs-Fireplace-Textured-Wall-Decor.png",
+                "https://t3.ftcdn.net/jpg/08/25/04/50/360_F_825045083_nJbyZ2DMtc6vkwYz7CrsfwESbkn9Qo9U.jpg"
             ],
+            "plan":"https://i.pinimg.com/736x/fd/a3/e2/fda3e276db5e14609aadaea721ef155a.jpg",
             "url": "properties/prop7_updated.html",
             "added": {
                 "month": "March",
