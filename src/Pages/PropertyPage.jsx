@@ -1,12 +1,20 @@
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { FaBed, FaBath, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaHouseChimney } from "react-icons/fa6";
 import propertiesData from '../Data/properties.json';
 
 export default function PropertyPage() {
   const { id } = useParams();
   const [property, setProperty] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [activeTab, setActiveTab] = useState('description');
+
+  const tabs = [
+    { id: 'description', label: 'Description' },
+    { id: 'floorplan', label: 'Floor Plan' },
+    { id: 'map', label: 'Map' },
+  ];
 
   useEffect(() => {
     // Simulating loading behavior
@@ -65,39 +73,91 @@ export default function PropertyPage() {
         ))}
       </div>
 
-      <div className="bg-white shadow-lg rounded-lg p-6 mb-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-6 text-center">
-          <div>
-            <span className="block text-gray-500">Price</span>
-            <span className="text-2xl font-bold text-gray-900">
-              ${property.price.toLocaleString()}
-            </span>
-          </div>
-          <div>
-            <span className="block text-gray-500 flex items-center justify-center gap-1">
-              <FaBed /> Bedrooms
-            </span>
-            <span className="text-2xl font-bold text-gray-900">
-              {property.bedrooms}
-            </span>
-          </div>
-          <div>
-            <span className="block text-gray-500">Tenure</span>
-            <span className="text-2xl font-bold text-gray-900">
-              {property.tenure}
-            </span>
-          </div>
+      {/* Tabs section */}
+      <div className="w-full h-14 bg-[#E8E9F3] rounded-2xl p-1.5 mb-6">
+        <div className="grid grid-cols-3 gap-2 h-full">
+          {tabs.map((tab) => (
+            <button
+              key={tab.id}
+              onClick={() => setActiveTab(tab.id)}
+              className={`
+                h-full rounded-xl text-base font-medium
+                ${activeTab === tab.id 
+                  ? 'bg-white shadow-none text-black' 
+                  : 'text-[#3B5BDB] hover:bg-white/50'}
+              `}
+            >
+              {tab.label}
+            </button>
+          ))}
         </div>
+      </div>
 
-        <h2 className="text-2xl font-semibold mb-4">Description</h2>
-        <p className="text-gray-700 leading-relaxed mb-6">
-          {property.description}
-        </p>
+      <div className="bg-white shadow-lg rounded-lg p-6 mb-8">
+        {/* Content based on selected tab */}
+        <div>
+          {activeTab === 'description' && (
+            <>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10 text-center">
+                <div>
+                  <span className="block text-gray-900 font-semibold">Price</span>
+                  <span className="text-2xl font-bold text-[#3B5BDB]">
+                    ${property.price.toLocaleString()}
+                  </span>
+                </div>
+                <div>
+                  <span className="block text-gray-800 flex items-center justify-center gap-1 font-semibold">
+                  <FaHouseChimney /> Type
+                  </span>
+                  <span className="text-xl font-bold text-gray-900">
+                    {property.type}
+                  </span>
+                </div>
+                <div>
+                  <span className="block text-gray-800 flex items-center justify-center gap-1 font-semibold">
+                    <FaBed /> Bedrooms
+                  </span>
+                  <span className="text-xl font-bold text-gray-900">
+                    {property.bedrooms}
+                  </span>
+                </div>
+                <div>
+                  <span className="block text-gray-800 font-semibold">Tenure</span>
+                  <span className="text-xl font-bold text-gray-900">
+                    {property.tenure}
+                  </span>
+                </div>
+              </div>
+            
+              <h2 className="text-2xl font-semibold mb-4">Description</h2>
+              <p className="text-gray-700 leading-relaxed mb-10">
+                {property.description}
+              </p>
 
-        <h2 className="text-2xl font-semibold mb-4">Added On</h2>
-        <p className="text-gray-700 leading-relaxed">
-          {`${property.added.day} ${property.added.month} ${property.added.year}`}
-        </p>
+              <h2 className="text-2xl font-semibold mb-1">Added On</h2>
+              <p className="text-gray-700 leading-relaxed">
+                {`${property.added.day} ${property.added.month} ${property.added.year}`}
+              </p>
+            </>
+          )}
+          {activeTab === 'floorplan' && (
+            <>
+              <img
+                src={property.floorPlan}
+                alt="Floor Plan"
+                className="w-full h-[450px] object-cover rounded-lg shadow-md"
+              />
+            </>
+          )}
+          {activeTab === 'map' && (
+            <>
+              <div className="h-[450px] bg-gray-200 rounded-lg">
+                {/* You can integrate a map service like Google Maps or OpenStreetMap here */}
+                Map content for {property.location}
+              </div>
+            </>
+          )}
+        </div>
       </div>
     </div>
   );
