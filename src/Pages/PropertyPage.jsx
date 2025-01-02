@@ -45,33 +45,34 @@ export default function PropertyPage() {
   }
 
   return (
-    <div className="max-w-5xl mx-auto px-6 sm:px-12 py-12">
-      <h1 className="text-4xl font-extrabold text-gray-900 mb-4">
+    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 mt-20">
+      <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-4">
         {property.name}
       </h1>
-      <p className="text-lg text-gray-600 flex items-center gap-2 mb-6">
+      <p className="text-base sm:text-lg text-gray-600 flex items-center gap-2 mb-6">
         <FaMapMarkerAlt className="text-blue-500" /> {property.location}
       </p>
 
       <div className="mb-8">
         <img
-          src={property.picture}
+          src={property.prop}
           alt={property.name}
-          className="w-full h-[450px] object-cover rounded-lg shadow-md"
+          className="w-full h-[250px] sm:h-[350px] lg:h-[450px] object-cover rounded-lg shadow-md"
         />
       </div>
 
       {/* Thumbnail images */}
-      <div className="grid grid-cols-5 gap-4 mb-8">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mb-12">
         {property.thumbnails.map((thumb, index) => (
           <img
             key={index}
             src={thumb}
             alt={`Thumbnail ${index + 1}`}
-            className="w-full h-[200px] object-cover rounded-lg shadow-sm cursor-pointer hover:opacity-80"
+            className="w-full h-[120px] sm:h-[140px] lg:h-[160px] object-cover rounded-lg shadow-sm cursor-pointer transform transition-transform hover:scale-105 duration-700 ease-out-in"
           />
         ))}
       </div>
+
 
       {/* Tabs section */}
       <div className="w-full h-14 bg-[#E8E9F3] rounded-2xl p-1.5 mb-6">
@@ -81,7 +82,7 @@ export default function PropertyPage() {
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
               className={`
-                h-full rounded-xl text-base font-medium
+                h-full rounded-xl text-sm sm:text-base font-medium
                 ${activeTab === tab.id 
                   ? 'bg-white shadow-none text-black' 
                   : 'text-[#3B5BDB] hover:bg-white/50'}
@@ -98,43 +99,43 @@ export default function PropertyPage() {
         <div>
           {activeTab === 'description' && (
             <>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10 text-center">
+              <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10 text-center">
                 <div>
-                  <span className="block text-gray-900 font-semibold">Price</span>
-                  <span className="text-2xl font-bold text-[#3B5BDB]">
+                  <span className="block text-gray-900 font-bold">Price</span>
+                  <span className="text-lg text-[#3B5BDB]">
                     ${property.price.toLocaleString()}
                   </span>
                 </div>
                 <div>
-                  <span className="block text-gray-800 flex items-center justify-center gap-1 font-semibold">
-                  <FaHouseChimney /> Type
+                  <span className="block text-gray-800 flex items-center justify-center gap-1 font-bold">
+                    <FaHouseChimney /> Type
                   </span>
-                  <span className="text-xl font-bold text-gray-900">
+                  <span className="text-lg text-gray-900">
                     {property.type}
                   </span>
                 </div>
                 <div>
-                  <span className="block text-gray-800 flex items-center justify-center gap-1 font-semibold">
+                  <span className="block text-gray-800 flex items-center justify-center gap-1 font-bold">
                     <FaBed /> Bedrooms
                   </span>
-                  <span className="text-xl font-bold text-gray-900">
+                  <span className="text-lg text-gray-900">
                     {property.bedrooms}
                   </span>
                 </div>
                 <div>
-                  <span className="block text-gray-800 font-semibold">Tenure</span>
-                  <span className="text-xl font-bold text-gray-900">
+                  <span className="block text-gray-800 font-bold">Tenure</span>
+                  <span className="text-lg text-gray-900">
                     {property.tenure}
                   </span>
                 </div>
               </div>
             
-              <h2 className="text-2xl font-semibold mb-4">Description</h2>
+              <h2 className="text-xl sm:text-2xl font-semibold mb-4">Description</h2>
               <p className="text-gray-700 leading-relaxed mb-10">
                 {property.description}
               </p>
 
-              <h2 className="text-2xl font-semibold mb-1">Added On</h2>
+              <h2 className="text-xl sm:text-2xl font-semibold mb-1">Added On</h2>
               <p className="text-gray-700 leading-relaxed">
                 {`${property.added.day} ${property.added.month} ${property.added.year}`}
               </p>
@@ -143,15 +144,15 @@ export default function PropertyPage() {
           {activeTab === 'floorplan' && (
             <>
               <img
-                src={property.floorPlan}
+                src={property.plan}
                 alt="Floor Plan"
-                className="w-full h-[450px] object-cover rounded-lg shadow-md"
+                className="w-full h-[250px] sm:h-[350px] lg:h-[400px] object-cover rounded-lg shadow-md"
               />
             </>
           )}
           {activeTab === 'map' && (
             <>
-              <div className="h-[450px] bg-gray-200 rounded-lg">
+              <div className="h-[250px] sm:h-[350px] lg:h-[450px] bg-gray-200 rounded-lg">
                 {/* You can integrate a map service like Google Maps or OpenStreetMap here */}
                 Map content for {property.location}
               </div>
