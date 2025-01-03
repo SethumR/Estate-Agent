@@ -11,9 +11,9 @@ export default function Header() {
           <Link to="/" className="text-2xl font-bold text-blue-600">LuxuryEstates</Link>
           <div className="hidden md:flex space-x-10">
             <Link to="/" className="text-gray-600 hover:text-blue-600">Home</Link>
-            <Link to="/properties" className="text-gray-600 hover:text-blue-600">Properties</Link>
-            <Link to="/about" className="text-gray-600 hover:text-blue-600">About</Link>
-            <Link to="/contact" className="text-gray-600 hover:text-blue-600">Contact</Link>
+            <Link to="/" className="text-gray-600 hover:text-blue-600">Properties</Link>
+            <Link to="/" className="text-gray-600 hover:text-blue-600">About</Link>
+            <Link to="/" className="text-gray-600 hover:text-blue-600">Contact</Link>
           </div>
 
           <button 
@@ -28,7 +28,7 @@ export default function Header() {
         {isMenuOpen && (
           <div className="mt-4 md:hidden">
             <Link to="/" className="block py-2 text-gray-600 hover:text-blue-600">Home</Link>
-            <Link to="/properties" className="block py-2 text-gray-600 hover:text-blue-600">Properties</Link>
+            <Link to="/" className="block py-2 text-gray-600 hover:text-blue-600">Properties</Link>
             <Link to="/about" className="block py-2 text-gray-600 hover:text-blue-600">About</Link>
             <Link to="/contact" className="block py-2 text-gray-600 hover:text-blue-600">Contact</Link>
           </div>
