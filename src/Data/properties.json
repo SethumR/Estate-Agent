@@ -18,12 +18,14 @@
                 "https://www.mypunepulse.com/wp-content/uploads/2024/11/WhatsApp-Image-2024-11-12-at-2.55.33-PM.jpeg"
             ],
             "plan":"https://images.squarespace-cdn.com/content/v1/5cbf6245f4e5311aabbdca11/1579397647278-NEPG7JID6WVBBHWTJ5UV/Floorplan.png",
+            "map": "https://www.google.com/maps/embed/v1/place?q=40.7128,-74.0060&key=AIzaSyBkuTDoJKvCTQe3elHvu2-8T47128muN4o",
 			"url":"properties/prop1.html",
-            "added": {
+                "added": {
                 "month":"October",
                 "day":12,
                 "year":2022
             }
+            
         },
 		{
             "id":"prop2",
@@ -44,6 +46,7 @@
             ],
             "plan":"https://png.pngtree.com/template/20220330/ourmid/pngtree-cad-floor-plan-of-three-rooms-and-one-hall-image_881558.jpg",
 			"url":"properties/prop2.html",
+            "map": "https://www.google.com/maps/embed/v1/place?q=40.7128,-74.0060&key=AIzaSyBkuTDoJKvCTQe3elHvu2-8T47128muN4o",
             "added": {
                 "month":"September",
                 "day":14,
@@ -69,6 +72,7 @@
             ],
             "plan":"https://images.squarespace-cdn.com/content/v1/5bdde6530dbda3230ba6bd5d/1582757759192-V5GJC3HRY3JNN65M2R0W/FloorPlan.png",
             "url": "properties/prop3_updated.html",
+            "map": "https://www.google.com/maps/embed/v1/place?q=40.7128,-74.0060&key=AIzaSyBkuTDoJKvCTQe3elHvu2-8T47128muN4o",
             "added": {
                 "month": "November",
                 "day": 20,
@@ -94,6 +98,7 @@
             ],
             "plan":"https://www.mymodernhome.com/media/images/MMH_-_4.22_SECOND_FLOOR_PLAN_OPT.width-1200.format-webp.webp",
             "url": "properties/prop4_updated.html",
+            "map": "https://www.google.com/maps/embed/v1/place?q=40.7128,-74.0060&key=AIzaSyBkuTDoJKvCTQe3elHvu2-8T47128muN4o",
             "added": {
                 "month": "December",
                 "day": 5,
@@ -119,6 +124,7 @@
             ],
             "plan":"https://i.pinimg.com/736x/13/48/1a/13481a72022e25b932fe37c0cf0b9b45.jpg",
             "url": "properties/prop5_updated.html",
+            "map": "https://www.google.com/maps/embed/v1/place?q=40.7128,-74.0060&key=AIzaSyBkuTDoJKvCTQe3elHvu2-8T47128muN4o",
             "added": {
                 "month": "January",
                 "day": 10,
@@ -144,6 +150,7 @@
             ],
             "plan":"https://i.pinimg.com/originals/cc/a7/2e/cca72e78bb27e620615d3fe7c2bf1ed5.png",
             "url": "properties/prop6_updated.html",
+            "map": "https://www.google.com/maps/embed/v1/place?q=40.7128,-74.0060&key=AIzaSyBkuTDoJKvCTQe3elHvu2-8T47128muN4o",
             "added": {
                 "month": "February",
                 "day": 15,
@@ -169,6 +176,7 @@
             ],
             "plan":"https://i.pinimg.com/736x/fd/a3/e2/fda3e276db5e14609aadaea721ef155a.jpg",
             "url": "properties/prop7_updated.html",
+            "map": "https://www.google.com/maps/embed/v1/place?q=40.7128,-74.0060&key=AIzaSyBkuTDoJKvCTQe3elHvu2-8T47128muN4o",
             "added": {
                 "month": "March",
                 "day": 5,
