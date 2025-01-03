@@ -17,14 +17,13 @@ export default function PropertyPage() {
   ];
 
   useEffect(() => {
-    // Simulating loading behavior
     setTimeout(() => {
       const foundProperty = propertiesData.properties.find(
         (prop) => prop.id === id
       );
       setProperty(foundProperty);
       setLoading(false);
-    }, 1000); // Adjust the delay as needed
+    }, 1000);
   }, [id]);
 
   if (loading) {
@@ -72,7 +71,6 @@ export default function PropertyPage() {
           />
         ))}
       </div>
-
 
       {/* Tabs section */}
       <div className="w-full h-14 bg-[#E8E9F3] rounded-2xl p-1.5 mb-6">
@@ -150,12 +148,16 @@ export default function PropertyPage() {
               />
             </>
           )}
-          {activeTab === 'map' && (
+          {activeTab === 'map' && property.map && (
             <>
-              <div className="h-[250px] sm:h-[350px] lg:h-[450px] bg-gray-200 rounded-lg">
-                {/* You can integrate a map service like Google Maps or OpenStreetMap here */}
-                Map content for {property.location}
-              </div>
+              <iframe
+                src={property.map}
+                width="100%"
+                height="450"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+              ></iframe>
             </>
           )}
         </div>
