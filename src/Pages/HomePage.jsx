@@ -102,16 +102,19 @@ function HomePage() {
     }
   };
 
+  const clearFavorites = () => {
+    setFavorites([]);
+  };
+
   const scrollToFeaturedProperties = () => {
     const featuredPropertiesSection = document.getElementById('featured-properties');
     if (featuredPropertiesSection) {
       window.scrollTo({
-        top: featuredPropertiesSection.offsetTop - 100,  
+        top: featuredPropertiesSection.offsetTop - 100,
         behavior: 'smooth'
       });
     }
   };
-  
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -120,8 +123,7 @@ function HomePage() {
           <div className="space-y-6">
             <h1 className="text-4xl md:text-5xl lg:text-[54px] font-bold">
               <span className="text-blue-600">Rent</span> Your Dream
-              <br />
-               House With Us.
+              <br /> House With Us.
             </h1>
             <p className="text-gray-700 text-lg md:text-xl max-w-lg">
               Find your ideal home with us. From cozy houses to luxurious villas, we offer a range of rental options to suit your needs and budget.
@@ -145,7 +147,6 @@ function HomePage() {
         </div>
       </div>
 
-      {/* Featured Property Types Section */}
       <section className="bg-gray-50 py-12 sm:mb-24 rounded-xl">
         <h2 className="text-3xl font-extrabold text-center mb-6 sm:text-4xl">
           Featured Property Types
@@ -176,7 +177,11 @@ function HomePage() {
             handleSearchChange={handleSearchChange}
             handleSearchSubmit={handleSearchSubmit}
           />
-          <Favorites favorites={favorites} toggleFavorite={toggleFavorite} />
+          <Favorites
+            favorites={favorites}
+            toggleFavorite={toggleFavorite}
+            clearFavorites={clearFavorites} // Pass the clearFavorites function to Favorites
+          />
         </aside>
 
         <main className="lg:w-3/4 p-6">
@@ -216,11 +221,11 @@ function HomePage() {
                         </Link>
 
                         <button
-                          className={`text-2xl p-3 rounded-full ${
+                          className={`text-xl p-3 rounded-full ${
                             favorites.find((fav) => fav.id === property.id)
                               ? 'text-red-500 border-2 border-red-500'
                               : 'text-gray-400 border-2 border-gray-400'
-                          } w-10 h-10 flex items-center justify-center`}
+                          } w-9 h-9 flex items-center justify-center`}
                           onClick={() => toggleFavorite(property)}>
                           ♥
                         </button>
