@@ -11,7 +11,7 @@ function SearchForm({ searchParams, handleSearchChange, handleSearchSubmit }) {
       <input
         type="text"
         name="location"
-        placeholder="Location"
+        placeholder="Postcode (e.g., NW1)"
         className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none"
         value={searchParams.location}
         onChange={handleSearchChange}
