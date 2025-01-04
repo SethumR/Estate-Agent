@@ -27,8 +27,8 @@
 
 .main-image img {
   width: 100%;
-  height: auto; /* Ensure images scale on smaller screens */
-  max-height: 450px; /* Add a max-height for larger screens */
+  height: auto; 
+  max-height: 450px; 
   object-fit: cover;
   border-radius: 1rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -44,7 +44,7 @@
 
 .thumbnail {
   width: 100%;
-  height: auto; /* Allow images to scale */
+  height: auto; 
   object-fit: cover;
   border-radius: 0.75rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -97,7 +97,7 @@
 
 .info {
   display: flex;
-  flex-wrap: wrap; /* Allow flex items to wrap on smaller screens */
+  flex-wrap: wrap; 
   gap: 1rem;
   margin-bottom: 2rem;
   text-align: left;
@@ -164,7 +164,7 @@
   }
 
   .info {
-      display: grid; /* Ensure it's using grid */
+      display: grid; 
       grid-template-columns: repeat(2, 1fr);
       margin-bottom: 45px;
   }
@@ -212,7 +212,7 @@
 
 @media (min-width: 1200px) {
   .PropertyPage {
-      padding: 4rem; /* Adjust padding on larger screens */
+      padding: 4rem; 
   }
 
   .main-image img {
