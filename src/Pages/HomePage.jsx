@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './Page.css';
 import { FaHome, FaBuilding, FaBriefcase, FaHotel } from 'react-icons/fa';
 
-// Property types with icons and descriptions
+// Define the property types to be displayed with icons, titles, and descriptions
 const propertyTypes = [
   {
     icon: FaHome,
@@ -47,7 +47,7 @@ const propertyTypes = [
 ];
 
 function HomePage() {
-  // States for managing favorites and search parameters
+  // State to store favorites and search parameters
   const [favorites, setFavorites] = useState([]);
   const [searchParams, setSearchParams] = useState({
     location: '',
@@ -60,16 +60,16 @@ function HomePage() {
     propertyType: ''
   });
 
-  // Filtered property results based on search criteria
+  // State to store filtered results based on search parameters
   const [filteredResults, setFilteredResults] = useState(propertiesData.properties);
 
-  // Handles changes in the search input fields
+  // Update search parameters when user inputs data
   const handleSearchChange = (e) => {
     const { name, value } = e.target;
     setSearchParams({ ...searchParams, [name]: value });
   };
 
-  // Filters properties based on search parameters
+  // Handle form submission to filter properties based on search parameters
   const handleSearchSubmit = (e) => {
     e.preventDefault();
 
@@ -84,6 +84,7 @@ function HomePage() {
       propertyType
     } = searchParams;
 
+    // Filter properties based on search parameters
     const results = propertiesData.properties.filter((property) => {
       return (
         (!location || property.location.toLowerCase().includes(location.toLowerCase())) &&
@@ -97,26 +98,26 @@ function HomePage() {
       );
     });
 
-    setFilteredResults(results);
+    setFilteredResults(results); // Set filtered results
     console.log('Search Results:', results);
   };
 
-  // Toggles a property between favorites
+  // Toggle property in favorites list
   const toggleFavorite = (property) => {
     const isFavorite = favorites.find((fav) => fav.id === property.id);
     if (isFavorite) {
-      setFavorites(favorites.filter((fav) => fav.id !== property.id)); // Remove if already favorited
+      setFavorites(favorites.filter((fav) => fav.id !== property.id)); // Remove from favorites
     } else {
-      setFavorites([...favorites, property]); // Add if not yet favorited
+      setFavorites([...favorites, property]); // Add to favorites
     }
   };
 
-  // Clears all favorites
+  // Clear all favorites
   const clearFavorites = () => {
     setFavorites([]);
   };
 
-  // Scrolls to the featured properties section
+  // Scroll to the featured properties section
   const scrollToFeaturedProperties = () => {
     const featuredPropertiesSection = document.getElementById('featured-properties');
     if (featuredPropertiesSection) {
@@ -129,6 +130,7 @@ function HomePage() {
 
   return (
     <div className="min-vh-100 d-flex flex-column">
+      {/* Hero Section */}
       <div className="container py-5 my-5">
         <div className="row align-items-center mt-20 mb-10">
           <div className="col-12 col-md-6">
@@ -148,7 +150,7 @@ function HomePage() {
         </div>
       </div>
 
-      {/* Featured Property Types Section */}
+      {/* Featured Property Types */}
       <section className="bg-light py-5 rounded-4 fsection">
         <div className="container">
           <h2 className="fs-2 fw-bold text-center mb-4">Featured Property Types</h2>
@@ -173,7 +175,7 @@ function HomePage() {
         </div>
       </section>
 
-      {/* Main Content Area with Sidebar and Featured Properties */}
+      {/* Sidebar and Main Content */}
       <div className="d-lg-flex mb-8">
         <aside className="col-lg-3 p-4 ms-lg-4 ms-20 mb-20 mb-md-5 mb-sm-3">
           <SearchForm
@@ -185,11 +187,12 @@ function HomePage() {
             favorites={favorites}
             toggleFavorite={toggleFavorite}
             clearFavorites={clearFavorites}
+            properties={propertiesData.properties}
           />
         </aside>
 
-        {/* Featured Properties */}
         <main className="col-lg-9 p-4">
+          {/* Featured Properties Section */}
           <section id="featured-properties">
             <h2 className="text-center mb-4 mb-sm-4 fw-bold fp">Featured Properties</h2>
             <p className="text-center mb-5 fpp">
@@ -197,14 +200,14 @@ function HomePage() {
             </p>
 
             <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-2 g-4 boxp">
+              {/* Display filtered properties or a message if none are found */}
               {filteredResults.length > 0 ? (
                 filteredResults.map((property) => (
                   <div key={property.id} className="col">
                     <div
-                      key={property.id}
                       className="col"
-                      draggable="true"
-                      onDragStart={(e) => e.dataTransfer.setData("propertyId", property.id)}
+                      draggable="true" // Enable dragging of the property card
+                      onDragStart={(e) => e.dataTransfer.setData("propertyId", property.id)} // Store property ID for drag-and-drop functionality
                     >
                       <div className="bg-white rounded-4 shadow-sm overflow-hidden hover-shadow-lg">
                         <img
@@ -245,7 +248,9 @@ function HomePage() {
                   </div>
                 ))
               ) : (
-                <p className="text-center text-muted">No properties match your search criteria.</p>
+                <div className="col-12">
+                  <p className="text-center">No results found.</p> 
+                </div>
               )}
             </div>
           </section>
