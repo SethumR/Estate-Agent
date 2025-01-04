@@ -9,7 +9,6 @@ export default function Header() {
     <header className="bg-white shadow fixed-top">
       <div className="container py-4">
         <div className="d-flex justify-content-between align-items-center">
-          {/* Brand */}
           <Link to="/" className="text-primary fw-bold fs-3 text-decoration-none">LuxuryEstates</Link>
           
           {/* Desktop Navigation */}
@@ -24,20 +23,17 @@ export default function Header() {
           {/* Mobile Menu Button */}
           <button
             className="btn d-md-none"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
+            onClick={() => setIsMenuOpen(!isMenuOpen)}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
               fill="currentColor"
               className="bi bi-list"
-              viewBox="0 0 16 16"
-            >
+              viewBox="0 0 16 16">
               <path
                 fillRule="evenodd"
-                d="M2.5 12a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm0-5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm0-5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11z"
-              />
+                d="M2.5 12a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm0-5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm0-5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11z"/>
             </svg>
           </button>
         </div>
