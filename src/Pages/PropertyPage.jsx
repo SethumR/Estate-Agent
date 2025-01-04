@@ -134,6 +134,7 @@ export default function PropertyPage() {
             src={property.plan}
             alt="Floor Plan"
             className="image"
+            
           />
         )}
 
