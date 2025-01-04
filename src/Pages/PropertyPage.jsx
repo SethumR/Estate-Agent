@@ -6,17 +6,22 @@ import propertiesData from '../Data/properties.json';
 import './ProperyPage.css';
 
 export default function PropertyPage() {
+  // Extract the property ID from the URL params
   const { id } = useParams();
+  
+  // State hooks to manage property data, loading state, and active tab
   const [property, setProperty] = useState(null);
   const [loading, setLoading] = useState(true);
   const [activeTab, setActiveTab] = useState('description');
-
+  
+  // Tabs for displaying property details (Description, Floor Plan, Map)
   const tabs = [
     { id: 'description', label: 'Description' },
     { id: 'floorplan', label: 'Floor Plan' },
     { id: 'map', label: 'Map' },
   ];
 
+  // Fetch property data when component mounts or when the property ID changes
   useEffect(() => {
     setTimeout(() => {
       const foundProperty = propertiesData.properties.find(
@@ -24,9 +29,10 @@ export default function PropertyPage() {
       );
       setProperty(foundProperty);
       setLoading(false);
-    }, 1000);
+    }, 1000); // Simulate loading delay
   }, [id]);
 
+  // Loading state view
   if (loading) {
     return (
       <div className="text-center py-20">
@@ -36,6 +42,7 @@ export default function PropertyPage() {
     );
   }
 
+  // If property not found
   if (!property) {
     return (
       <div className="text-center py-20 text-gray-500">
@@ -47,6 +54,8 @@ export default function PropertyPage() {
   return (
     <div className="PropertyPage">
       <h1 className="heading">{property.name}</h1>
+      
+      {/* Location and main property image */}
       <p className="location">
         <FaMapMarkerAlt className="icon" /> {property.location}
       </p>
@@ -59,7 +68,7 @@ export default function PropertyPage() {
         />
       </div>
 
-      {/* Thumbnail images */}
+      {/* Thumbnail images of the property */}
       <div className="thumbnails">
         {property.thumbnails.map((thumb, index) => (
           <img
@@ -71,7 +80,7 @@ export default function PropertyPage() {
         ))}
       </div>
 
-      {/* Tabs section */}
+      {/* Tabs for Description, Floor Plan, and Map */}
       <div className="tabs">
         {tabs.map((tab) => (
           <button
@@ -84,64 +93,61 @@ export default function PropertyPage() {
         ))}
       </div>
 
+      {/* Content based on the selected tab */}
       <div className="content">
-        {/* Content based on selected tab */}
-        <div>
-          {activeTab === 'description' && (
-            <>
-              <div className="info">
-                <div className="info-item">
-                  <span className="info-title">Price</span>
-                  <span className="info-value">${property.price.toLocaleString()}</span>
-                </div>
-                <div className="info-item">
-                  <span className="info-title">
-                    <FaHouseChimney /> Type
-                  </span>
-                  <span className="info-value">{property.type}</span>
-                </div>
-                <div className="info-item">
-                  <span className="info-title">
-                    <FaBed /> Bedrooms
-                  </span>
-                  <span className="info-value">{property.bedrooms}</span>
-                </div>
-                <div className="info-item">
-                  <span className="info-title">Tenure</span>
-                  <span className="info-value">{property.tenure}</span>
-                </div>
+        {activeTab === 'description' && (
+          <>
+            <div className="info">
+              <div className="info-item">
+                <span className="info-title">Price</span>
+                <span className="info-value">${property.price.toLocaleString()}</span>
               </div>
+              <div className="info-item">
+                <span className="info-title">
+                  <FaHouseChimney /> Type
+                </span>
+                <span className="info-value">{property.type}</span>
+              </div>
+              <div className="info-item">
+                <span className="info-title">
+                  <FaBed /> Bedrooms
+                </span>
+                <span className="info-value">{property.bedrooms}</span>
+              </div>
+              <div className="info-item">
+                <span className="info-title">Tenure</span>
+                <span className="info-value">{property.tenure}</span>
+              </div>
+            </div>
 
-              <h2 className="sub-heading">Description</h2>
-              <p className="description">{property.description}</p>
+            <h2 className="sub-heading">Description</h2>
+            <p className="description">{property.description}</p>
 
-              <h2 className="sub-heading">Added On</h2>
-              <p className="added-date">{`${property.added.day} ${property.added.month} ${property.added.year}`}</p>
-            </>
-          )}
-          {activeTab === 'floorplan' && (
-            <>
-              <img
-                src={property.plan}
-                alt="Floor Plan"
-                className="image"
-              />
-            </>
-          )}
-          {activeTab === 'map' && property.map && (
-            <>
-              <iframe
-                src={property.map}
-                width="100%"
-                height="450"
-                className="map"
-                loading="lazy"
-              ></iframe>
-            </>
-          )}
-        </div>
+            <h2 className="sub-heading">Added On</h2>
+            <p className="added-date">{`${property.added.day} ${property.added.month} ${property.added.year}`}</p>
+          </>
+        )}
+
+        {/* Display Floor Plan if selected */}
+        {activeTab === 'floorplan' && (
+          <img
+            src={property.plan}
+            alt="Floor Plan"
+            className="image"
+          />
+        )}
+
+        {/* Display Map if selected */}
+        {activeTab === 'map' && property.map && (
+          <iframe
+            src={property.map}
+            width="100%"
+            height="450"
+            className="map"
+            loading="lazy"
+          ></iframe>
+        )}
       </div>
     </div>
-
   );
 }
