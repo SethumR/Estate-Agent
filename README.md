@@ -6,6 +6,11 @@
 
 This is a web application that allows users to view properties available for rent such as houses, flats, and villas. Users can filter the properties based on various criteria like type, price range, number of bedrooms, date added, and postcode area. The application also allows users to add properties to their favorites by clicking a button or using drag-and-drop functionality. Additionally, users can view detailed information about a property, including images, descriptions, floor plans, and a Google map.
 
+Live Demo :- https://luxuryestates.netlify.app/
+
+![image](https://github.com/user-attachments/assets/cb6f2865-2cd7-45c1-b0c7-3c0609a94347)
+
+
 ---
 
 ## ⚙️ Setup Instructions
