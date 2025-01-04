@@ -1,39 +1,57 @@
-import { Link } from 'react-router-dom'
-import { useState } from 'react'
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white shadow-md fixed top-0 w-full z-50">
-      <div className="container mx-auto px-4 py-6">
-        <div className="flex justify-between items-center">
-          <Link to="/" className="text-2xl font-bold text-blue-600">LuxuryEstates</Link>
-          <div className="hidden md:flex space-x-10">
-            <Link to="/" className="text-gray-600 hover:text-blue-600">Home</Link>
-            <Link to="/" className="text-gray-600 hover:text-blue-600">Properties</Link>
-            <Link to="/" className="text-gray-600 hover:text-blue-600">About</Link>
-            <Link to="/" className="text-gray-600 hover:text-blue-600">Contact</Link>
-          </div>
+    <header className="bg-white shadow fixed-top">
+      <div className="container py-4">
+        <div className="d-flex justify-content-between align-items-center">
+          {/* Brand */}
+          <Link to="/" className="text-primary fw-bold fs-3 text-decoration-none">LuxuryEstates</Link>
+          
+          {/* Desktop Navigation */}
+          <nav className="d-none d-md-flex gap-5 ">
+          <Link to="/" className="text-black text-decoration-none hover-primary">Home</Link>
+          <Link to="/" className="text-black text-decoration-none hover-primary">Properties</Link>
+          <Link to="/" className="text-black text-decoration-none hover-primary">About</Link>
+          <Link to="/" className="text-black text-decoration-none hover-primary">Contact</Link>
+        </nav>
 
-          <button 
-            className="md:hidden"
+
+          {/* Mobile Menu Button */}
+          <button
+            className="btn d-md-none"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              className="bi bi-list"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fillRule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm0-5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm0-5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11z"
+              />
             </svg>
           </button>
         </div>
+
+        {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="mt-4 md:hidden">
-            <Link to="/" className="block py-2 text-gray-600 hover:text-blue-600">Home</Link>
-            <Link to="/" className="block py-2 text-gray-600 hover:text-blue-600">Properties</Link>
-            <Link to="/about" className="block py-2 text-gray-600 hover:text-blue-600">About</Link>
-            <Link to="/contact" className="block py-2 text-gray-600 hover:text-blue-600">Contact</Link>
-          </div>
+          <nav className="mt-3 d-md-none">
+            <Link to="/" className="d-block py-2 text-secondary text-decoration-none hover-primary">Home</Link>
+            <Link to="/properties" className="d-block py-2 text-secondary text-decoration-none hover-primary">Properties</Link>
+            <Link to="/about" className="d-block py-2 text-secondary text-decoration-none hover-primary">About</Link>
+            <Link to="/contact" className="d-block py-2 text-secondary text-decoration-none hover-primary">Contact</Link>
+          </nav>
         )}
       </div>
     </header>
-  )
+  );
 }
