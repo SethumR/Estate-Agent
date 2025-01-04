@@ -58,21 +58,10 @@ export default function Footer() {
         </div>
 
         <hr className="footer-divider" />
-
-        {/* Copyright */}
         <div className="footer-copyright">
           <p>Copyright © 2025 LuxuryEstates</p>
         </div>
       </div>
-
-      {/* Scroll to Top Button
-      <button
-        onClick={scrollToTop}
-        className="scroll-to-top"
-        aria-label="Scroll to top"
-      >
-        <FaArrowUp className="scroll-icon" />
-      </button> */}
     </footer>
   );
 }
