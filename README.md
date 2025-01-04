@@ -1,12 +1,12 @@
 # Estate Agent Client-side Web Application
 
----
+
 
 ## 📖 Introduction
 
 This is a web application that allows users to view properties available for rent such as houses, flats, and villas. Users can filter the properties based on various criteria like type, price range, number of bedrooms, date added, and postcode area. The application also allows users to add properties to their favorites by clicking a button or using drag-and-drop functionality. Additionally, users can view detailed information about a property, including images, descriptions, floor plans, and a Google map.
 
----
+
 
 ## ⚙️ Setup Instructions
 
@@ -18,7 +18,7 @@ Ensure the following are installed on your system:
 - React: Version 18 or higher.
 - Vite (installed during setup)
   
----
+
 
 ### To run the application locally, follow these steps:
 
