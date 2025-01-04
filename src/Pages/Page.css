@@ -1,0 +1,141 @@
+.custom-img-container {
+  width: 705px;        /* Original width */
+  height: 560px;  
+  border-radius: 20px;
+  max-width: 705px;
+  border-top-left-radius: 150px;
+}
+
+@media (max-width: 768px) {
+  .custom-img-container {
+    width: 100%;       /* Full width on smaller screens */
+    height: auto;      /* Maintain aspect ratio */
+    max-width: 705px;  /* Ensure it doesn't exceed the original width */
+    max-height: 555px; /* Ensure it doesn't exceed the original height */
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-img-container {  
+    width: 350px;  /* Ensure it doesn't exceed the original width */
+    height: 310px; /* Ensure it doesn't exceed the original height */
+    border-top-left-radius: 110px;
+    margin-bottom: -10px;
+  }
+  
+}
+
+.typep{
+  font-size: 22px;
+}
+
+.fsection{
+  margin-bottom: 120px;
+}
+
+.fp{
+  font-size: 32px;
+}
+
+.fpp{
+  font-size: 21px;
+}
+
+.boxp{
+  max-width: 900px;
+}
+
+.hp{
+  font-size: 20px;
+}
+
+.hb{
+  margin-top: 20px;
+  width: 150px; /* Increase width of the button */
+  height: 55px; /* Increase height of the button */
+}
+
+@media (max-width: 476px) {
+  .typep {
+    font-size: 17px; /* Font size for mobile screens */
+  }
+  .fsection{
+    margin-bottom: -50px;
+  }
+  .fp{
+    font-size: 25px;
+  }
+  .fpp{
+    font-size: 17.5px;
+  }
+  .hp{
+    font-size: 17px;
+  }
+  .hb{
+    margin-top: 20px;
+    margin-bottom: 60px;
+    width: 130px; /* Increase width of the button */
+    height: 50px;
+  
+  }
+}
+
+.search-form {
+  background-color: white;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 140px;
+  margin-left: -95px;
+  width: 340px;
+}
+
+.form-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 16px;
+  margin-bottom: 30px;
+}
+
+/* Input Fields */
+.input-field {
+  width: 100%;
+  padding: 8px 16px;
+  border: 1px solid #d1d5db; /* Light Gray Border */
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-bottom: 16px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-field:focus {
+  border-color: #3b82f6; /* Blue Border */
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3); /* Blue Ring */
+}
+
+/* Grid Layout for Two Inputs */
+.input-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+/* Submit Button */
+.submit-button {
+  width: 100%;
+  background-color: #2563eb; /* Blue Background */
+  color: white;
+  padding: 10px 0;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #1e40af; /* Darker Blue on Hover */
+}
+
