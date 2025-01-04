@@ -1,0 +1,124 @@
+/* General Footer Styling */
+.footer {
+    background-color: #1F2937; /* bg-gray-800 */
+    color: #d1d5db; /* text-gray-300 */
+    padding: 3rem 1.5rem; /* py-12 px-6 */
+    position: relative;
+  }
+  
+  .footer-container {
+    max-width: 112rem; /* max-w-7xl */
+    margin: 0 auto;
+  }
+  
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem; /* gap-12 */
+    margin-bottom: 3rem; /* mb-12 */
+  }
+  
+  @media (min-width: 768px) {
+    .footer-grid {
+      grid-template-columns: 1fr 1fr; /* md:grid-cols-2 */
+      gap: 6rem; /* md:gap-24 */
+    }
+  }
+  
+  /* Left Column */
+  .footer-title {
+    color: #ffffff; /* text-white */
+    font-size: 1.5rem; /* text-2xl */
+    font-weight: 600; /* font-semibold */
+  }
+  
+  .footer-description {
+    color: #a0aec0; /* text-gray-400 */
+    line-height: 1.75; /* leading-relaxed */
+  }
+  
+  .footer-social-links {
+    display: flex;
+    gap: 1rem; /* gap-4 */
+  }
+  
+  .footer-social-link {
+    padding: 0.5rem; /* p-2 */
+    border: 1px solid #4a5568; /* border-gray-700 */
+    border-radius: 50%;
+    transition: border-color 0.3s ease;
+  }
+  
+  .footer-social-link:hover {
+    border-color: #718096; /* hover:border-gray-500 */
+  }
+  
+  .footer-icon {
+    width: 1.25rem; /* w-5 */
+    height: 1.25rem; /* h-5 */
+  }
+  
+  /* Right Column */
+  .contact-info {
+    margin-left: 1rem; /* ml-4 */
+  }
+  
+  @media (min-width: 768px) {
+    .contact-info {
+      margin-left: 20rem; /* md:ml-80 */
+    }
+  }
+  
+  .contact-details {
+    display: flex;
+    gap: 1rem; /* gap-4 */
+    align-items: center;
+  }
+  
+  .contact-icon-wrapper {
+    padding: 0.5rem; /* p-2 */
+    border: 1px solid #4a5568; /* border-gray-700 */
+    border-radius: 50%;
+  }
+  
+  .contact-text {
+    color: #a0aec0; /* text-gray-400 */
+  }
+  
+  .contact-detail {
+    color: #d1d5db; /* text-gray-300 */
+  }
+  
+  /* Divider */
+  .footer-divider {
+    border-top: 1px solid #FFFFFF; /* border-gray-800 */
+  }
+  
+  /* Copyright Section */
+  .footer-copyright {
+    padding-top: 2rem; /* pt-8 */
+    text-align: center;
+    color: #a0aec0; /* text-gray-400 */
+  }
+  
+  /* Scroll to Top Button */
+  .scroll-to-top {
+    position: fixed;
+    bottom: 1.5rem; /* bottom-6 */
+    right: 1.5rem; /* right-6 */
+    padding: 0.75rem; /* p-3 */
+    background-color: #1e3a8a; /* bg-blue-950 */
+    color: #ffffff; /* text-white */
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .scroll-to-top:hover {
+    background-color: #1c3a9d; /* hover:bg-blue-900 */
+  }
+  
+  .scroll-icon {
+    width: 1.5rem; /* w-6 */
+    height: 1.5rem; /* h-6 */
+  }
+  
