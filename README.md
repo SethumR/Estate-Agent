@@ -46,22 +46,23 @@ Ensure the following are installed on your system:
 
 ---
 
-## Project Dependencies
+## Project Dependencies  
 
-The following dependencies are used in this project:
+The following dependencies are used in this project:  
 
-- **@radix-ui/react-tabs:** Accessible customizable React tabs.  
-- **@react-google-maps/api:** Google Maps integration for React.  
-- **bootstrap:** Responsive design framework with components.  
-- **bootstrap-icons:** Icon library for Bootstrap projects.  
-- **react:** Core library for building UIs.  
-- **react-beautiful-dnd:** Drag-and-drop for React apps.  
-- **react-dnd:** Flexible drag-and-drop for React.  
-- **react-dnd-html5-backend:** HTML5 backend for React DnD.  
-- **react-dom:** Renders React components to DOM.  
-- **react-icons:** Icon library for React applications.  
-- **react-router-dom:** Routing library for React apps.  
-- **tailwindcss:** Utility-first CSS framework for styling.
+- `@radix-ui/react-tabs`: ^1.1.2 - Accessible customizable React tabs.  
+- `@react-google-maps/api`: ^2.20.5 - Google Maps integration for React.  
+- `bootstrap`: ^5.3.3 - Responsive design framework with components.  
+- `bootstrap-icons`: ^1.11.3 - Icon library for Bootstrap projects.  
+- `react`: ^18.3.1 - Core library for building UIs.  
+- `react-beautiful-dnd`: ^13.1.1 - Drag-and-drop for React apps.  
+- `react-dnd`: ^16.0.1 - Flexible drag-and-drop for React.  
+- `react-dnd-html5-backend`: ^16.0.1 - HTML5 backend for React DnD.  
+- `react-dom`: ^18.3.1 - Renders React components to DOM.  
+- `react-icons`: ^5.3.0 - Icon library for React applications.  
+- `react-router-dom`: ^7.0.2 - Routing library for React apps.  
+- `tailwindcss`: ^3.0.0 - Utility-first CSS framework for styling.  
+
   
 
 ---
