@@ -8,6 +8,23 @@ function SearchForm({ searchParams, handleSearchChange, handleSearchSubmit }) {
       <h2 className="form-title">Search Properties</h2>
 
       {/* Location input field */}
+      {/* <label className="label mb-2 text-sm font-bold" htmlFor="type">
+          Property Type
+        </label> */}
+
+      {/* Dropdown for property type selection */}
+      <select
+        name="propertyType"
+        className="input-field"
+        value={searchParams.propertyType}
+        onChange={handleSearchChange} 
+      >
+        <option value="">Property Type</option>
+        <option value="house">House</option>
+        <option value="flat">Flat</option>
+        <option value="villa">Villa</option>
+      </select>
+
       <input
         type="text"
         name="location"
@@ -75,18 +92,6 @@ function SearchForm({ searchParams, handleSearchChange, handleSearchSubmit }) {
         onChange={handleSearchChange} 
       />
 
-      {/* Dropdown for property type selection */}
-      <select
-        name="propertyType"
-        className="input-field"
-        value={searchParams.propertyType}
-        onChange={handleSearchChange} 
-      >
-        <option value="">Property Type</option>
-        <option value="house">House</option>
-        <option value="flat">Flat</option>
-        <option value="villa">Villa</option>
-      </select>
 
       {/* Submit button to trigger the search */}
       <button type="submit" className="submit-button">
