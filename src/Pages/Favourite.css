@@ -33,6 +33,7 @@
   .property-details h4 {
     font-size: 1.125rem;
     font-weight: 500;
+    margin-bottom: 10px;
   }
   
   .property-details p {
