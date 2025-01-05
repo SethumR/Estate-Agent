@@ -72,34 +72,48 @@ function HomePage() {
   // Handle form submission to filter properties based on search parameters
   const handleSearchSubmit = (e) => {
     e.preventDefault();
-
+  
     const {
       location,
       minPrice,
       maxPrice,
       minBedrooms,
       maxBedrooms,
-      dateAdded,
+      dateAfter,
+      dateBefore,
       postcode,
       propertyType
     } = searchParams;
-
-    // Filter properties based on search parameters
+  
+    // Parse the date from JSON and handle date comparison
     const results = propertiesData.properties.filter((property) => {
+      const propertyDate = new Date(property.added.year, getMonthIndex(property.added.month), property.added.day);
+      const afterDate = dateAfter ? new Date(dateAfter) : null;
+      const beforeDate = dateBefore ? new Date(dateBefore) : null;
+  
       return (
         (!location || property.location.toLowerCase().includes(location.toLowerCase())) &&
         (!minPrice || property.price >= parseInt(minPrice)) &&
         (!maxPrice || property.price <= parseInt(maxPrice)) &&
         (!minBedrooms || property.bedrooms >= parseInt(minBedrooms)) &&
         (!maxBedrooms || property.bedrooms <= parseInt(maxBedrooms)) &&
-        (!dateAdded || new Date(property.dateAdded) >= new Date(dateAdded)) &&
         (!postcode || property.postcode.toLowerCase().includes(postcode.toLowerCase())) &&
-        (!propertyType || propertyType === 'any' || property.type.toLowerCase() === propertyType.toLowerCase())
+        (!propertyType || propertyType === 'any' || property.type.toLowerCase() === propertyType.toLowerCase()) &&
+        (!afterDate || propertyDate >= afterDate) && // Filter for date after the selected date
+        (!beforeDate || propertyDate <= beforeDate) // Filter for date before the selected date
       );
     });
-
+  
     setFilteredResults(results); // Set filtered results
     console.log('Search Results:', results);
+  };
+
+  // Helper function to convert month name to index
+  const getMonthIndex = (monthName) => {
+    const months = [
+      'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'
+    ];
+    return months.indexOf(monthName);
   };
 
   // Toggle property in favorites list
@@ -115,6 +129,20 @@ function HomePage() {
   // Clear all favorites
   const clearFavorites = () => {
     setFavorites([]);
+  };
+
+  // Clear search form fields
+  const handleClear = () => {
+    setSearchParams({
+      location: '',
+      minPrice: '',
+      maxPrice: '',
+      minBedrooms: '',
+      maxBedrooms: '',
+      dateAdded: '',
+      postcode: '',
+      propertyType: ''
+    });
   };
 
   // Scroll to the featured properties section
@@ -182,6 +210,7 @@ function HomePage() {
             searchParams={searchParams}
             handleSearchChange={handleSearchChange}
             handleSearchSubmit={handleSearchSubmit}
+            handleClear={handleClear} // Add the handleClear function here
           />
           <Favorites
             favorites={favorites}
