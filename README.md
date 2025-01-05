@@ -18,18 +18,18 @@ Live Demo :- https://luxuryestates.netlify.app/
 
 The following dependencies are used in this project:
 
-- 🛠️ `@radix-ui/react-tabs`: ^1.1.2
-- 🗺️ `@react-google-maps/api`: ^2.20.5
-- 🚀 `bootstrap`: ^5.3.3
-- 📦 `bootstrap-icons`: ^1.11.3
-- ⚛️ `react`: ^18.3.1
-- 🔄 `react-beautiful-dnd`: ^13.1.1
-- 🔄 `react-dnd`: ^16.0.1
-- 🔄 `react-dnd-html5-backend`: ^16.0.1
-- ⚛️ `react-dom`: ^18.3.1
-- 📁 `react-icons`: ^5.3.0
-- 🔗 `react-router-dom`: ^7.0.2
-- 🌬️ `tailwindcss`: ^3.0.0
+- `@radix-ui/react-tabs`: ^1.1.2
+- `@react-google-maps/api`: ^2.20.5
+- `bootstrap`: ^5.3.3
+- `bootstrap-icons`: ^1.11.3
+- `react`: ^18.3.1
+- `react-beautiful-dnd`: ^13.1.1
+- `react-dnd`: ^16.0.1
+- `react-dnd-html5-backend`: ^16.0.1
+- `react-dom`: ^18.3.1
+- `react-icons`: ^5.3.0
+- `react-router-dom`: ^7.0.2
+- `tailwindcss`: ^3.0.0
 
   
   
