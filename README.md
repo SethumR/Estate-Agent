@@ -13,6 +13,27 @@ Live Demo :- https://luxuryestates.netlify.app/
 
 ---
 
+## Project Dependencies
+
+The following dependencies are used in this project:
+
+- <i class="bi bi-code-slash"></i> `@radix-ui/react-tabs`: ^1.1.2
+- <i class="bi bi-map"></i> `@react-google-maps/api`: ^2.20.5
+- <i class="bi bi-bootstrap"></i> `bootstrap`: ^5.3.3
+- <i class="bi bi-image"></i> `bootstrap-icons`: ^1.11.3
+- <i class="bi bi-react"></i> `react`: ^18.3.1
+- <i class="bi bi-arrows-move"></i> `react-beautiful-dnd`: ^13.1.1
+- <i class="bi bi-arrows-move"></i> `react-dnd`: ^16.0.1
+- <i class="bi bi-arrows-move"></i> `react-dnd-html5-backend`: ^16.0.1
+- <i class="bi bi-react"></i> `react-dom`: ^18.3.1
+- <i class="bi bi-file-earmark-code"></i> `react-icons`: ^5.3.0
+- <i class="bi bi-arrow-right-circle"></i> `react-router-dom`: ^7.0.2
+- <i class="bi bi-braces"></i> `tailwindcss`: ^3.0.0
+  
+  
+---
+
+
 ## ⚙️ Setup Instructions
 
 ### Prerequisites
