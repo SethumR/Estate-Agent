@@ -13,22 +13,24 @@ Live Demo :- https://luxuryestates.netlify.app/
 
 ---
 
+
 ## Project Dependencies
 
 The following dependencies are used in this project:
 
-- <i class="bi bi-code-slash"></i> `@radix-ui/react-tabs`: ^1.1.2
-- <i class="bi bi-map"></i> `@react-google-maps/api`: ^2.20.5
-- <i class="bi bi-bootstrap"></i> `bootstrap`: ^5.3.3
-- <i class="bi bi-image"></i> `bootstrap-icons`: ^1.11.3
-- <i class="bi bi-react"></i> `react`: ^18.3.1
-- <i class="bi bi-arrows-move"></i> `react-beautiful-dnd`: ^13.1.1
-- <i class="bi bi-arrows-move"></i> `react-dnd`: ^16.0.1
-- <i class="bi bi-arrows-move"></i> `react-dnd-html5-backend`: ^16.0.1
-- <i class="bi bi-react"></i> `react-dom`: ^18.3.1
-- <i class="bi bi-file-earmark-code"></i> `react-icons`: ^5.3.0
-- <i class="bi bi-arrow-right-circle"></i> `react-router-dom`: ^7.0.2
-- <i class="bi bi-braces"></i> `tailwindcss`: ^3.0.0
+- ![Radix UI](https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/radix.svg) `@radix-ui/react-tabs`: ^1.1.2
+- ![Google Maps](https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/googlemaps.svg) `@react-google-maps/api`: ^2.20.5
+- ![Bootstrap](https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/bootstrap.svg) `bootstrap`: ^5.3.3
+- ![Bootstrap Icons](https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/bootstrapicons.svg) `bootstrap-icons`: ^1.11.3
+- ![React](https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/react.svg) `react`: ^18.3.1
+- ![React DnD](https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/react.svg) `react-beautiful-dnd`: ^13.1.1
+- ![React DnD](https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/react.svg) `react-dnd`: ^16.0.1
+- ![React DnD Backend](https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/react.svg) `react-dnd-html5-backend`: ^16.0.1
+- ![React DOM](https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/react.svg) `react-dom`: ^18.3.1
+- ![React Icons](https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/react.svg) `react-icons`: ^5.3.0
+- ![React Router](https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/reactrouter.svg) `react-router-dom`: ^7.0.2
+- ![Tailwind CSS](https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/tailwindcss.svg) `tailwindcss`: ^3.0.0
+
   
   
 ---
