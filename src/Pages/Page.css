@@ -3,7 +3,7 @@
   height: 560px;  
   border-radius: 20px;
   max-width: 705px;
-  border-top-left-radius: 150px;
+  border-top-left-radius: 200px;
 }
 
 @media (max-width: 768px) {
@@ -118,17 +118,31 @@
 }
 
 .submit-button {
-  width: 100%;
-  background-color: #2563eb; 
+  background-color: #2563eb; /* Primary color for the submit button */
   color: white;
-  padding: 10px 0;
-  font-size: 1rem;
+  padding: 10px 40px;
+  font-size: 14px;
+  border-radius: 4px;
   border: none;
-  border-radius: 6px;
   cursor: pointer;
-  transition: background-color 0.3s;
 }
 
 .submit-button:hover {
-  background-color: #1e40af; 
+  background-color: #1e40af; /* Darker shade for hover effect */
+}
+
+.clear-button {
+  background-color: #2563eb; /* Red color for the clear button */
+  color: white;
+  padding: 10px 40px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  margin-left: 50px; /* Add gap between the buttons */
+  margin-top: 10px;
+}
+
+.clear-button:hover {
+  background-color: #1e40af; /* Darker red for hover effect */
 }

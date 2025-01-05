@@ -1,16 +1,26 @@
 import React from 'react';
 import './Page.css'; 
 
-// SearchForm component for property search functionality
-function SearchForm({ searchParams, handleSearchChange, handleSearchSubmit }) {
+function SearchForm({ searchParams, handleSearchChange, handleSearchSubmit, handleClear }) {
+  
+  // Resetting the searchParams state on clear button click
+  const handleClearClick = () => {
+    // Reset search parameters to initial empty values
+    handleClear({
+      propertyType: "",
+      location: "",
+      minPrice: "",
+      maxPrice: "",
+      minBedrooms: "",
+      maxBedrooms: "",
+      dateAfter: "",
+      dateBefore: ""
+    });
+  };
+
   return (
     <form onSubmit={handleSearchSubmit} className="search-form">
       <h2 className="form-title">Search Properties</h2>
-
-      {/* Location input field */}
-      {/* <label className="label mb-2 text-sm font-bold" htmlFor="type">
-          Property Type
-        </label> */}
 
       {/* Dropdown for property type selection */}
       <select
@@ -25,17 +35,19 @@ function SearchForm({ searchParams, handleSearchChange, handleSearchSubmit }) {
         <option value="villa">Villa</option>
       </select>
 
+      {/* Location input field */}
       <input
         type="text"
         name="location"
         placeholder="Postcode (e.g., NW1)"
         className="input-field"
-        value={searchParams.location} // The value is bound to  the state
-        onChange={handleSearchChange} // Updates location when typed
+        value={searchParams.location}
+        onChange={handleSearchChange}
       />
 
       {/* Grid layout for price and bedrooms input fields */}
       <div className="input-grid">
+        {/* Min Price input */}
         <input
           type="number"
           name="minPrice"
@@ -45,6 +57,7 @@ function SearchForm({ searchParams, handleSearchChange, handleSearchSubmit }) {
           onChange={handleSearchChange} 
         />
 
+        {/* Max Price input */}
         <input
           type="number"
           name="maxPrice"
@@ -54,48 +67,52 @@ function SearchForm({ searchParams, handleSearchChange, handleSearchSubmit }) {
           onChange={handleSearchChange} 
         />
 
+        {/* Min Bedrooms input */}
         <input
           type="number"
           name="minBedrooms"
           placeholder="Min Bedrooms"
           className="input-field"
           value={searchParams.minBedrooms}
-          onChange={handleSearchChange} // Updates minBedrooms when typed
+          onChange={handleSearchChange} 
         />
 
+        {/* Max Bedrooms input */}
         <input
           type="number"
           name="maxBedrooms"
           placeholder="Max Bedrooms"
           className="input-field"
           value={searchParams.maxBedrooms}
-          onChange={handleSearchChange} // Updates maxBedrooms when typed
+          onChange={handleSearchChange} 
         />
       </div>
 
       {/* Date input for when the property was added */}
       <input
         type="date"
-        name="dateAdded"
+        name="dateAfter"
         className="input-field"
-        value={searchParams.dateAdded}
+        value={searchParams.dateAfter}
         onChange={handleSearchChange} 
       />
 
-      {/* Postcode input */}
       <input
-        type="text"
-        name="postcode"
-        placeholder="Postcode (e.g., NW1)"
+        type="date"
+        name="dateBefore"
         className="input-field"
-        value={searchParams.postcode}
+        value={searchParams.dateBefore}
         onChange={handleSearchChange} 
       />
-
 
       {/* Submit button to trigger the search */}
       <button type="submit" className="submit-button">
         Search
+      </button>
+
+      {/* Clear button to reset the form */}
+      <button type="button" className="clear-button" onClick={handleClearClick}>
+        Clear
       </button>
     </form>
   );
