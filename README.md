@@ -10,28 +10,6 @@ Live Demo :- https://luxuryestates.netlify.app/
 
 ![image](https://github.com/user-attachments/assets/cb6f2865-2cd7-45c1-b0c7-3c0609a94347)
 
-
----
-
-
-## Project Dependencies
-
-The following dependencies are used in this project:
-
-- `@radix-ui/react-tabs`: ^1.1.2
-- `@react-google-maps/api`: ^2.20.5
-- `bootstrap`: ^5.3.3
-- `bootstrap-icons`: ^1.11.3
-- `react`: ^18.3.1
-- `react-beautiful-dnd`: ^13.1.1
-- `react-dnd`: ^16.0.1
-- `react-dnd-html5-backend`: ^16.0.1
-- `react-dom`: ^18.3.1
-- `react-icons`: ^5.3.0
-- `react-router-dom`: ^7.0.2
-- `tailwindcss`: ^3.0.0
-
-  
   
 ---
 
@@ -65,6 +43,26 @@ Ensure the following are installed on your system:
   ```bash
   npm run dev
   ```
+
+---
+
+## Project Dependencies
+
+The following dependencies are used in this project:
+
+- **@radix-ui/react-tabs:** Accessible customizable React tabs.  
+- **@react-google-maps/api:** Google Maps integration for React.  
+- **bootstrap:** Responsive design framework with components.  
+- **bootstrap-icons:** Icon library for Bootstrap projects.  
+- **react:** Core library for building UIs.  
+- **react-beautiful-dnd:** Drag-and-drop for React apps.  
+- **react-dnd:** Flexible drag-and-drop for React.  
+- **react-dnd-html5-backend:** HTML5 backend for React DnD.  
+- **react-dom:** Renders React components to DOM.  
+- **react-icons:** Icon library for React applications.  
+- **react-router-dom:** Routing library for React apps.  
+- **tailwindcss:** Utility-first CSS framework for styling.
+  
 
 ---
 
