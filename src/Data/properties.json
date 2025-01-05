@@ -20,7 +20,7 @@
             "plan":"https://images.squarespace-cdn.com/content/v1/5cbf6245f4e5311aabbdca11/1579397647278-NEPG7JID6WVBBHWTJ5UV/Floorplan.png",
             "map": "https://www.google.com/maps/embed/v1/place?q=40.7128,-74.0060&key=AIzaSyBkuTDoJKvCTQe3elHvu2-8T47128muN4o",
 			"url":"properties/prop1.html",
-                "added": {
+            "added": {
                 "month":"October",
                 "day":12,
                 "year":2022
