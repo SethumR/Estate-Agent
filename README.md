@@ -66,8 +66,20 @@ The following dependencies are used in this project:
 
 **To install all these dependencies at once, run the following command::**
 
-```sh
-npm install @radix-ui/react-tabs@^1.1.2 @react-google-maps/api@^2.20.5 bootstrap@^5.3.3 bootstrap-icons@^1.11.3 react@^18.3.1 react-beautiful-dnd@^13.1.1 react-dnd@^16.0.1 react-dnd-html5-backend@^16.0.1 react-dom@^18.3.1 react-icons@^5.3.0 react-router-dom@^7.0.2 tailwindcss@^3.0.0
+ ```bash
+npm install @radix-ui/react-tabs
+npm install @react-google-maps/api
+npm install bootstrap
+npm install bootstrap-icons
+npm install react
+npm install react-beautiful-dnd
+npm install react-dnd
+npm install react-dnd-html5-backend
+npm install react-dom
+npm install react-icons
+npm install react-router-dom
+npm install tailwindcss
+
 ```
 
 ---
