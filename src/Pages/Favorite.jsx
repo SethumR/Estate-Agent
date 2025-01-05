@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { MdDelete } from "react-icons/md";
 import './Favourite.css';
 
@@ -33,8 +34,10 @@ function Favorites({ favorites, toggleFavorite, clearFavorites, properties }) {
           favorites.map((property) => (
             <div key={property.id} className="favorite-item">
               <div className="property-details">
-                <h4>{property.name}</h4>
-                <p>{property.location}</p>
+                <Link to={`/property/${property.id}`}>
+                  <h4>{property.name}</h4>
+                  <p>{property.location}</p>
+                </Link>
               </div>
               {/* Delete button to remove the property from favorites */}
               <button
